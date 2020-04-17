@@ -1,0 +1,191 @@
+/* ! General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(#07baf0, #2d78c5);
+  width: 1496px;
+  height: 1000px;
+  overflow-y: hidden;
+  color: #5d676a;
+}
+
+#form-page {
+  position: relative;
+  background-color: white;
+  width: 992px;
+  height: 550px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+}
+
+.left-side {
+  float: left;
+  width: 50%;
+}
+
+.right-side {
+  float: left;
+  width: 50%;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  display: block;
+}
+
+#first {
+  position: absolute;
+  height: 80px;
+  border: 2px solid #22a7cc;
+  top: 12px;
+  left: 115px;
+}
+
+#second {
+  position: absolute;
+  width: 100%;
+  border: 1.2px solid #22a7cc;
+  bottom: -23px;
+}
+
+#third {
+  position: absolute;
+  height: 52%;
+  border: 1.2px solid #22a7cc;
+  left: 48%;
+}
+/* ! Header Section */
+
+header {
+  position: relative;
+}
+
+header #icon-page {
+  width: 90px;
+  position: absolute;
+  top: 5px;
+}
+
+#title {
+  padding-top: 10px;
+  font-size: 45px;
+}
+
+#description {
+  font-style: italic;
+  font-size: 22px;
+}
+
+header #title,
+header #description {
+  padding-left: 132px;
+}
+
+.pad {
+  padding: 30px 50px;
+}
+
+/* ! Main Form Section*/
+
+#main-form {
+  padding-top: 45px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  display: none;
+}
+
+legend {
+  font-size: 25px;
+}
+
+/* ! Left section */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 380px;
+  height: 35px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border-color: #22a7cc;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+}
+
+select {
+  margin-top: 0;
+}
+
+/* ! Right Section */
+.right-side span {
+  display: block;
+}
+.right-side input[type="radio"],
+.right-side input[type="checkbox"] {
+  float: left;
+}
+
+.pad-top {
+  padding-top: 10px;
+}
+
+.special-pad-top {
+  padding-top: 20px;
+}
+
+span {
+  padding-top: 5px;
+}
+
+.right-side label {
+  position: relative;
+  left: 10px;
+}
+
+textarea {
+  border-radius: 5px;
+  border-color: #22a7cc;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-weight: lighter;
+}
+
+button {
+  float: right;
+  position: relative;
+  top: 20px;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #22a7cc;
+  border-style: solid;
+  height: 30px;
+  width: 80px;
+}
+
+button p {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}

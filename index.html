@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Covid-19 | Survey Form</title>
+  </head>
+  <body>
+    <div id="form-page">
+      <div class="pad">
+        <div class="Header">
+          <header>
+            <hr id="first" />
+            <img
+              id="icon-page"
+              src="images/CoronaIcon.png"
+              alt="CoronaVirusImage"
+            />
+            <h1 id="title">Corona Virus</h1>
+            <p id="description">Survey Form</p>
+            <hr id="second" />
+          </header>
+        </div>
+        <div id="main-form">
+          <form id="survey-form" action="">
+            <div class="left-side">
+              <fieldset>
+                <legend>Profil</legend>
+                <label id="name-label">Nama</label
+                ><input
+                  id="name"
+                  type="text"
+                  placeholder="Siapa Nama Anda?"
+                  required
+                />
+                <label id="email-label">Email</label
+                ><input
+                  id="email"
+                  type="email"
+                  placeholder="Apa Email Anda?"
+                  required
+                />
+                <label id="number-label">Umur</label
+                ><input
+                  id="number"
+                  type="number"
+                  placeholder="Berapa Umur Anda?"
+                  min="1"
+                  max="150"
+                />
+                <select name="dropdown" id="dropdown">
+                  <option value="laki-laki">Laki-laki</option>
+                  <option value="perempuan">Perempuan</option>
+                </select>
+              </fieldset>
+            </div>
+            <hr id="third" />
+            <div class="right-side">
+              <fieldset>
+                <legend>Status</legend>
+                <span class="pad-top">
+                  <input type="radio" name="status" value="pelajar" />
+                  <label id="pelajar"> Pelajar</label>
+                </span>
+                <span>
+                  <input type="radio" name="status" value="orangtua" />
+                  <label id="orangtua"> Orangtua</label>
+                </span>
+              </fieldset>
+              <fieldset>
+                <legend class="special-pad-top">Usia Anak</legend>
+                <span class="pad-top">
+                  <input type="checkbox" name="usia1" value="18plus" />
+                  <label id="usia1">> 18 Tahun (Lebih dari)</label>
+                </span>
+                <span>
+                  <input type="checkbox" name="usia2" value="18min" />
+                  <label id="usia2">< 18 Tahun (Kurang dari)</label>
+                </span>
+                <span>
+                  <input type="checkbox" name="usia3" value="belumpunya" />
+                  <label id="usia3">Belum punya anak</label>
+                </span>
+              </fieldset>
+              <div class="special-pad-top">
+                <textarea
+                  name="message"
+                  cols="58"
+                  rows="3"
+                  placeholder="Apa keluhan anda pada kasus Covid-19 ini . . ."
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" id="submit"><p>Submit</p></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
